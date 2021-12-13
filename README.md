@@ -3,6 +3,8 @@ This project served more as a personal challenge for myself. I wanted a chance t
 
 ...How to create string literals and use them to add elements to the DOM based on users input
 
+...How to use Git to push files into a repository
+
 ...How to use toFixed() to create rounded decimals
 
 ...How to use Sass to be syntactically awesome
