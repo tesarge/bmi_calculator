@@ -1,0 +1,114 @@
+$main-color: dodgerblue;
+$accent-color-1: #ffc60c;
+$accent-color-2: #ff5b0c;
+$white: #fff;
+$dark: #091623;
+$h1-font: 'Oxygen', sans-serif;
+$body-font: 'Dosis', sans-serif;
+
+
+
+body{
+    background-color: $white;
+    font-family: $body-font;
+
+}
+
+h1 {
+    color: $main-color;
+    font-family: $h1-font;
+}
+
+h2 {
+    color: $accent-color-2;
+    font-family: $body-font;
+}
+
+label {
+    font-size: 25px;
+    color: $main-color;
+    font-family: $h1-font;
+    margin: 5px 0 5px 0;
+}
+
+#content-container {
+    width: 500px;
+    margin: auto;
+    display: block;
+}
+
+#calc-container {
+    width: 400px;
+    height: 375px;
+    background-color: $accent-color-1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#h-w-container {
+    padding: 10px 15px 10px 15px;
+}
+
+.h-w-input{
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    box-shadow: 0;
+    display: inline;
+    font-size: 25px;
+    width: 100px;
+}
+
+.h-w-input:focus {
+    outline: 3px solid $accent-color-2;
+}
+
+#submitBtn {
+    background-color: $main-color;
+    color: $white;
+    margin:5px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+#result {
+    border-radius: 5px;
+    background-color: $white;
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: block;
+    #uwob {
+        padding: 15px;
+        h1{
+            font-size: 3em;
+            color: rgb(201, 17, 17);
+        }
+        p {
+            font-size: 2em;
+            color: red;
+        }
+    }
+    #ow {
+        padding: 15px;
+        h1{
+            font-size: 3em;
+            color: rgb(202, 175, 19);
+        }
+        p {
+            font-size: 2em;
+            color: rgb(211, 177, 28);
+        }
+    }
+    #nrml {
+        padding: 15px;
+        h1{
+            font-size: 3em;
+            color: rgb(14, 95, 11);
+        }
+        p {
+            font-size: 2em;
+            color: rgb(14, 114, 31);
+        }
+    }
+}
