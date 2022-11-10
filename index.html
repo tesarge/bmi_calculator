@@ -4,37 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bmi.css">
-    
+    <!-- <link rel="stylesheet" href="bmi.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={
+            theme: {
+            fontFamily: {
+            'sans': ['Dosis', 'system-ui'],
+            'serif': ['ui-serif', 'Georgia'],
+            'mono': ['ui-monospace', 'SFMono-Regular'],
+
+            }
+        }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Oxygen:wght@700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300" rel="stylesheet"> 
     <title>BMI Calculator</title>
 </head>
-<body>
-    <div id="content-container">
-    <h1>BMI Calculator</h1>
+<body class="bg-gradient-to-r from-orange-200 to-purple-100 font-sans text-slate-900 text-2xl">
+    <div id="content-container" class="bg-white w-64 mx-auto mt-24 p-4">
+    <h1 class="font-bold">BMI Calculator</h1>
 
-    <h2>Enter your height and weight below</h2>
+    <!-- <h2>Enter your height and weight below</h2> -->
 
-    <div id='calc-container'>
+    <div id='calc-container' class="mt-2">
         <div id="h-w-container">
             <form>
             <div>
             
                 <label for="height-input" required>Height (cm)</label>
-                <input class="h-w-input" id="height-input" type="number">
+                <input class="h-w-input bg-slate-100 border w-full" id="height-input" type="number">
             </div>
             <div>
                 <label for="weight-input" required>Weight (kg)</label>
-                <input class="h-w-input" id="weight-input"type="number">
+                <input class="h-w-input bg-slate-100 border w-full" id="weight-input"type="number">
             </div>
-            <input type="button" value="calculate" id="submitBtn">
+            <input type="button" value="calculate" id="submitBtn" class="px-3 py-1 tracking-wide mt-2 mb-2 bg-gradient-to-r from-cyan-500 to-lime-500 hover:from-pink-500 hover:to-yellow-500 rounded-md text-white font-bold ">
         </form>
             
         </div>
-        <div id="result">
-            <p id="result-output"></p>
+        <div id="result" class="container h-16">
+            <p id="result-output" ></p>
         </div>
         
     </div>
