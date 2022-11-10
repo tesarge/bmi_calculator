@@ -7,6 +7,6 @@ This project served more as a personal challenge for myself. I wanted a chance t
 
 ...How to use toFixed() to create rounded decimals
 
-...How to use Sass to be syntactically awesome
+...How to use Tailwind CSS to whip up a pleasing interface in a jiffy
 
 ...That my BMI is a bit high and that I should do some laps around the block
